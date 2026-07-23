@@ -1,0 +1,78 @@
+name: Bug Report
+description: Report a problem with this resource
+title: "[BUG] "
+labels:
+  - bug
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an issue. Please complete the form below.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: Clearly explain what went wrong.
+      placeholder: Tell us what happened...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Start the resource
+        2. Perform an action
+        3. See the error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Resource version
+      placeholder: "Example: 1.2.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: framework
+    attributes:
+      label: Framework
+      options:
+        - ESX
+        - QBCore
+        - Qbox
+        - Standalone
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: errors
+    attributes:
+      label: Errors or logs
+      description: Paste any relevant console errors here.
+      render: shell
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have searched for existing issues.
+          required: true
+        - label: I am using the latest version.
+          required: true
