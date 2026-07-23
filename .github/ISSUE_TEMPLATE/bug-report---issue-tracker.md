@@ -1,87 +1,35 @@
 ---
 name: Bug Report / Issue Tracker
 about: Describe this issue template's purpose here.
-title: "[BUG]"
+title: "[BUG] "
 labels: ''
 assignees: FellaHighOnaBoat
 
 ---
 
-name: Bug Report
-description: Report a problem with this resource
-title: "[BUG] "
-labels:
-  - bug
-assignees: []
+## Describe the bug
 
-body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for reporting an issue. Please complete the form below.
+Clearly describe what went wrong.
 
-  - type: textarea
-    id: description
-    attributes:
-      label: Describe the bug
-      description: Clearly explain what went wrong.
-      placeholder: Tell us what happened...
-    validations:
-      required: true
+## Steps to reproduce
 
-  - type: textarea
-    id: reproduce
-    attributes:
-      label: Steps to reproduce
-      placeholder: |
-        1. Start the resource
-        2. Perform an action
-        3. See the error
-    validations:
-      required: true
+1. 
+2. 
+3. 
 
-  - type: textarea
-    id: expected
-    attributes:
-      label: Expected behaviour
-      description: What did you expect to happen?
-    validations:
-      required: true
+## Expected behaviour
 
-  - type: input
-    id: version
-    attributes:
-      label: Resource version
-      placeholder: "Example: 1.2.0"
-    validations:
-      required: true
+What did you expect to happen?
 
-  - type: dropdown
-    id: framework
-    attributes:
-      label: Framework
-      options:
-        - ESX
-        - QBCore
-        - Qbox
-        - Standalone
-        - Other
-    validations:
-      required: true
+## Actual behaviour
 
-  - type: textarea
-    id: errors
-    attributes:
-      label: Errors or logs
-      description: Paste any relevant console errors here.
-      render: shell
+What happened instead?
 
-  - type: checkboxes
-    id: checks
-    attributes:
-      label: Before submitting
-      options:
-        - label: I have searched for existing issues.
-          required: true
-        - label: I am using the latest version.
-          required: true
+## Screenshots or videos
+
+Add any relevant screenshots or recordings.
+
+## Error messages
+
+```text
+Paste errors here
